@@ -1,0 +1,13 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 1000
+
+[[patches]]
+[patches.regex]
+target = 'functions/common_events.lua'
+pattern = "local front = .+"
+position = 'before'
+payload = "if SMODS.Mods.Soulseeking.pseudoseed_returns_center then return center end"
+match_indent = true
+times = 1

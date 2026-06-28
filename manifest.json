@@ -1,0 +1,23 @@
+{
+    "priority": 1e9,
+    "version": "1.0.0",
+    "id": "Soulseeking",
+    "name": "Soulseeking",
+    "icon_path": "icon.png",
+    "main_file": "main.lua",
+    "prefix": "Soulseeking",
+    "badge_colour": "8BE9FD",
+    "badge_text_colour": "FFFFFF",
+    "display_name": "Soulseeking",
+    "description": "Changes The Soul and The Judgement to display their next jokers",
+    "provides": [],
+    "conflicts": [],
+    "author": [
+        "Emik"
+    ],
+    "dependencies": [
+        "Steamodded (>=1.0.0~BETA-1221a)",
+        "Lovely (>=0.8)",
+        "Balatro (>=1.0.1o)"
+    ]
+}
