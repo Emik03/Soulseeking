@@ -30,7 +30,16 @@ local function next_joker(key_append)
         mod.pseudoseed_returns_center = true
         mod.pseudoseed_locked = true
 
-        local joker = create_card("Joker", G.jokers, key_append == "sou", nil, true, nil, nil, key_append)
+        local joker = create_card(
+            "Joker",
+            G.jokers,
+            key_append == "sou",
+            key_append == "wra" and 0.99 or nil,
+            true,
+            nil,
+            nil,
+            key_append
+        )
 
         mod.pseudoseed_locked = false
         mod.pseudoseed_returns_center = false
@@ -42,6 +51,7 @@ local function next_joker(key_append)
 end
 
 SMODS.Consumable:take_ownership("soul", {loc_vars = next_joker "sou"}, true)
+SMODS.Consumable:take_ownership("wraith", {loc_vars = next_joker "wra"}, true)
 SMODS.Consumable:take_ownership("judgement", {loc_vars = next_joker "jud"}, true)
 
 local function toggle(id)
@@ -62,6 +72,7 @@ function SMODS.current_mod.config_tab()
             config = {minw = 1, minh = 1, align = "tl", padding = 0.1, colour = G.C.CLEAR},
             nodes = {
                 toggle "c_judgement",
+                toggle "c_wraith",
                 toggle "c_soul",
             },
         }},
