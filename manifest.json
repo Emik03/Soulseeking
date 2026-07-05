@@ -1,6 +1,6 @@
 {
     "priority": 1e9,
-    "version": "1.1.0",
+    "version": "1.1.1",
     "id": "Soulseeking",
     "name": "Soulseeking",
     "icon_path": "icon.png",
@@ -9,7 +9,7 @@
     "badge_colour": "8BE9FD",
     "badge_text_colour": "FFFFFF",
     "display_name": "Soulseeking",
-    "description": "Changes The Soul and The Judgement to display their next jokers",
+    "description": "Changes vanilla consumable descriptions to display their next jokers",
     "provides": [],
     "conflicts": [],
     "author": [
