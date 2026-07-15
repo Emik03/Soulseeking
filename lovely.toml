@@ -13,5 +13,4 @@ if SMODS.Mods.Soulseeking.pseudoseed_returns_center then
     return center
 end
 """
-match_indent = true
 times = 1
